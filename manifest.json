@@ -1,16 +1,18 @@
 {
     "manifest_version"  : 2,
     "name"              : "boderify",
-    "version"           : 1.0,
+    "version"           : "1.0",
 
     "description"       : "add borders to firefox webpages",
 
     "icons" :   {
-        "48"            : null
+        "48"            : "./icons/Icon48.png"
     },
 
-    "content_scripts"   : {
-        "matches"       : ["*://*.mozilla.org/*"],
-        "js"            : ["./testscript.js"]
-    }
+    "content_scripts"   : [
+        {
+            "matches"       : ["*://*.mozilla.org/*"],
+            "js"            : ["./testscript.js"]            
+        }
+    ]
 }
