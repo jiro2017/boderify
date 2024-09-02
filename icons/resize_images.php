@@ -79,7 +79,7 @@ function resizeImages($image_location) {
     imagecopyresized($thumb, $source, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
 
     // Output
-    $result = imagepng($thumb, "./images/icons/icon48.png", 9);
+    $result = imagepng($thumb, "./icons/icon48.png", 9);
 
     //destroys the image in memory
     // imagedestroy($thumb);
@@ -92,4 +92,4 @@ function resizeImages($image_location) {
     }
 }
 
-resizeImages("./images/icons/Screenshot 2024-08-09 at 11-46-42 Colors.png");
+resizeImages("./icons/Screenshot 2024-08-09 at 11-46-42 Colors.png");
